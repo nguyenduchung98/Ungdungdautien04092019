@@ -9,20 +9,16 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    //Toan cuc: them 'm' trc bien
+    //1: khai bao
     TextView mtxt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//       //kieu nguyen tbhuy
-//        int a=5;
-//        int b=4;
-//        a=b
-//                a thay doi, b ko thay doi: vi b truyrn tham tri
-//        //kieu object
-//        int a=5;
-//        int b=4;
-//        a=b
-//        a thay doi, b thay doi: vi b truyrn tham chieu
+        //2: anh xa
+        mtxt = findViewById(R.id.textview);
+        //3: Viet code
+        mtxt.setText("Chào bạn Hằng <3");
     }
 }
